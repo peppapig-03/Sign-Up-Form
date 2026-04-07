@@ -24,34 +24,42 @@
                 <div class="title">Let's do this!</div>
                 <div class="loginrow">
                     <form>
-                        <label for="name">NAME</label>
-                        <input type="text" id="name" placeholder="Jane Doe" name="name">
+                        <label for="name">NAME<span>*</span></label>
+                        <input type="text" id="name" placeholder="Jane Doe" name="name" required>
                     </form>
                     <form>
-                        <label for="gender">GENDER</label>
-                        <input type="text" id="gender"  name="gender">
+                        <label for="gender">GENDER<span>*</span></label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="trans" selected>Rather Not Disclose</option>
+                        </select>
                     </form>
                 </div>
                 <div class="loginrow">
                     <form>
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" placeholder="Jane.Doe@example.com" name="email">
+                        <label for="email">EMAIL<span>*</span></label>
+                        <input type="email" id="email" placeholder="Jane.Doe@example.com" name="email" required>
                     </form>
                     <form>
-                        <label for="phoneNumber">PHONE</label>
-                        <input type="number" id=" phoneNumber" placeholder="0123456789" name="phoneNumber">
+                        <label for="phoneNumber">PHONE NUMBER<span>*</span></label>
+                        <input type="number" id=" phoneNumber" placeholder="0123456789" name="phoneNumber" required minlength="10" maxlength="10">
                     </form>
                 </div>
                 <div class="loginrow">
                     <form>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <label for="password">PASSWORD<span>*</span></label>
+                        <input type="password" id="password" name="password" required>
                     </form>
                     <form>
-                        <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword">
+                        <label for="confirmPassword">CONFIRM PASSWORD<span>*</span></label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
                     </form>
                 </div>
+            </div>
+            <div class="accountCreation">
+                <button type="submit">Create Account</button>
+                <p> Already have an account? <span>Log in</span></p>
             </div>
         </div>
     </div>
