@@ -8,14 +8,24 @@
     src:url("./Norsebold.woff2");
     font-weight:bold;
 }
+body{
+    padding:30px 0px;
+    background-color: black;
+}
+.mainSection{
+    background-color:white;
+    display:flex;
+    height:100dvh;
+    width:100%;
+}
 .leftSection{
+    flex-grow:0;
     background-image:url(bg-img.jpg);
     background-color:green;
     background-position:center;
     background-repeat:no-repeat;
     display:flex;
     width:30dvw;
-    height:100dvh;
     flex-direction:column;
 }
 .emptyBoxAboveHeader{
@@ -30,7 +40,7 @@
     height:20%;
     justify-content:center;
     align-items:center;
-    gap:clamp(20px,10vw,50px);
+    gap:clamp(10px,10vw,50px);
 }
 .header img{
     aspect-ratio: 1;
@@ -51,4 +61,40 @@
     line-height:100%;
     display:flex;
     align-items:center;
+}
+.rightSection{
+    background-color: #eeeff1;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    justify-content:center;
+}
+.rightSection .comments{
+    margin:40px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    font-weight:bold;
+}
+.comments span{
+    font-style:italic;
+}
+.loginbox{
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+    padding:20px 40px 40px 40px;
+    width:100%;
+    height:400px;
+    box-shadow: 0px 10px 5px gray ;
+}
+.loginbox .title{
+    color:black;
+    margin:0px;
+    padding:0px;
+    margin-bottom:20px;
+    font-size:60px;
+    font-weight:500;
 }
