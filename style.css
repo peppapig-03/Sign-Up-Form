@@ -9,13 +9,15 @@
     font-weight:bold;
 }
 body{
+    box-sizing:border-box;
     padding:30px 0px;
     background-color: black;
+    margin:0px;
 }
 .mainSection{
     background-color:white;
     display:flex;
-    height:100dvh;
+    height:90dvh;
     width:100%;
 }
 .leftSection{
@@ -27,6 +29,8 @@ body{
     display:flex;
     width:30dvw;
     flex-direction:column;
+    background-size:150%;
+    height:100%
 }
 .emptyBoxAboveHeader{
     height:30%;
@@ -64,18 +68,19 @@ body{
 }
 .rightSection{
     background-color: #eeeff1;
-    height:100dvh;
+    height:100%;
     display:flex;
     flex-direction:column;
     flex:1;
     justify-content:center;
 }
-.rightSection .comments{
-    height:20dvh;
-    margin:40px;
+.comments{
+    box-sizing:border-box;
+    height:20%;
+    padding:10px 20px;
     color:black;
     font-family:'Times New Roman', Times, serif;
-    font-size:50px;
+    font-size:33px;
     font-weight:bold;
 }
 .comments span{
@@ -86,9 +91,9 @@ body{
     display:flex;
     flex-direction:column;
     background-color:white;
-    padding:20px 40px 40px 40px;
+    padding:10px 20px;
     width:100%;
-    height:55dvh;
+    height:55%;
     box-shadow: 0px 10px 5px gray ;
     justify-content:space-between;
 }
@@ -96,15 +101,15 @@ body{
     color:black;
     margin:0px;
     padding:0px;
-    margin-bottom:20px;
-    font-size:60px;
+    margin-bottom:10px;
+    font-size:40px;
     font-weight:500;
 }
 .loginrow{
     display:flex;
     flex-wrap:wrap;
     width:100%;
-    height:150px;
+    height:100px;
     gap:5vw;
     margin:0px;
     flex:1;
@@ -118,23 +123,25 @@ form{
     height:100%;
     display:flex;
     flex-direction:column;
+    justify-content: center;
+    max-width:40%;
 }
 label{
-    flex:0 0 60px;
-    height:50px;
-    font-size:clamp(25px, 25px, 30px);
+    flex:0;
+    font-size:20px;
     white-space: nowrap;
     display:flex;
     align-items: flex-end;
+    height:30%;
 }
 label span{
     color:red
 }
 input, select{
     flex:1;
-    font-size:35px;
-    max-height:70px;
-    min-height:70px;
+    font-size:20px;
+    max-height:30px;
+    min-height:30px;
     margin-top:5px;
     padding:0px;
     padding-left:10px;
@@ -156,7 +163,7 @@ input:user-invalid{
 .accountCreation{
     display:flex;
     flex-direction:column;
-    height:20vh;
+    height:20%;
     padding:40px;
 
 }
